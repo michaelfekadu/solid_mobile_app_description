@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function HomeScreen() {
   return (
-    <div className=" flex flex-row mx-auto">
-      <div className="w-2/5 mx-auto flex flex-col justify-center ">
-        <div className="text-3xl mb-5 ">Home Screen</div>
+    <div className=" flex sm:flex-row flex-col mx-auto px-5 sm:px-0">
+      <div className="sm:w-2/5 mx-auto flex flex-col justify-center mb-20 sm:mb-0">
+        <div className="sm:text-3xl text-2xl mb-5 ">Home Screen</div>
         <div>
           The home screen of the app provides an overview of all the available
           patient data. The user can:
@@ -32,7 +32,7 @@ export default function HomeScreen() {
           </ol>
         </div>
       </div>
-      <div className="mx-auto w-2/5 flex rounded-3xl ">
+      <div className="mx-auto sm:w-2/5 flex rounded-3xl ">
         <Image
           className="mx-auto"
           priority

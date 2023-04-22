@@ -1,6 +1,6 @@
 export default function Challenge() {
   return (
-    <div className="w-2/5 flex flex-col py-96 justify-center mx-auto">
+    <div className="sm:w-2/5 flex flex-col sm:py-96 py-28 justify-center mx-auto px-5 sm:px-0">
       <div className="text-3xl mb-5 ">Challenge & Goal</div>
       <div>
         Osteoarthritis is a condition in which excessive bone growth occurs in

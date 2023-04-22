@@ -2,8 +2,18 @@ import { Center, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef } from "react";
 import BoneModels from "./BoneModels";
+import { useMediaQuery } from "@react-hook/media-query";
+import { useState, useEffect } from "react";
 
 function BoneModelCanvas() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  const isSmallScreens = useMediaQuery("(max-width: 640px)");
+
+  useEffect(() => {
+    setIsSmallScreen(isSmallScreens);
+  }, [isSmallScreens]);
+
   const orbitRef = useRef<any | null>(null);
   const handleDoubleClick = () => {
     if (orbitRef.current) {
@@ -14,11 +24,19 @@ function BoneModelCanvas() {
   return (
     <Canvas
       onDoubleClick={handleDoubleClick}
-      style={{
-        height: 1000,
-        width: 500,
-        margin: "auto",
-      }}
+      style={
+        !isSmallScreen
+          ? {
+              height: 1000,
+              width: 500,
+              margin: "auto",
+            }
+          : {
+              height: 500,
+              width: 250,
+              margin: "auto",
+            }
+      }
       className="flex justify-center"
     >
       <PerspectiveCamera

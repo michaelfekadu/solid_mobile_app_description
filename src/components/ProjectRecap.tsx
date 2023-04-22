@@ -1,7 +1,7 @@
 export default function ProjectRecap() {
   return (
-    <div className="w-2/5 mx-auto py-72">
-      <div className="text-3xl mb-5 ">
+    <div className="sm:w-2/5 mx-auto sm:py-72 my-28 px-5 sm:px-0">
+      <div className="sm:text-3xl text-2xl mb-5 ">
         Project Recap: Lessons and Skills Acquired
       </div>
       <div>

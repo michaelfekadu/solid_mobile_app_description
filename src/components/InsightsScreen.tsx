@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function InsightsScreen() {
   return (
-    <div className=" flex flex-col pb-80 mx-auto">
-      <div className="w-2/5 mx-auto pt-80">
-        <div className="text-3xl mb-5 ">Insights Screen</div>
+    <div className=" flex flex-col sm:pb-80 pb-48 mx-auto px-5 sm:px-0">
+      <div className="sm:w-2/5 mx-auto sm:pt-80 pt-48">
+        <div className="sm:text-3xl text-2xl mb-5 ">Insights Screen</div>
         <div>
           The insights screen presents an interactive 3D model of the
           patient&apos;s knee, allowing the user to explore the model by
@@ -34,8 +34,8 @@ export default function InsightsScreen() {
           </ol>
         </div>
       </div>
-      <div className="flex flex-row mx-auto space-x-16 mt-32">
-        <div className="mx-auto w-2/5 flex rounded-3xl ">
+      <div className="flex sm:flex-row flex-col mx-auto sm:space-x-16 mt-32">
+        <div className="mx-auto sm:w-2/5 flex rounded-3xl ">
           <Image
             className="mx-auto"
             priority
@@ -45,7 +45,7 @@ export default function InsightsScreen() {
             alt=""
           />
         </div>
-        <div className="mx-auto w-2/5 flex rounded-3xl ">
+        <div className="mx-auto sm:w-2/5 flex rounded-3xl ">
           <Image
             className="mx-auto"
             priority
@@ -55,7 +55,7 @@ export default function InsightsScreen() {
             alt=""
           />
         </div>
-        <div className="mx-auto w-2/5 flex rounded-3xl ">
+        <div className="mx-auto sm:w-2/5 flex rounded-3xl ">
           <Image
             className="mx-auto"
             priority

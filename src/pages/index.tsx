@@ -13,14 +13,14 @@ export default function index() {
   return (
     <div>
       <Header />
-      <div className="font-serif text-xl mx-auto ">
+      <div className="font-serif sm:text-xl">
         <div>
           <Introduction />
-          <div className="bg-gray-200 h-40" />
+          <div className="bg-gray-200 sm:h-40 h-20" />
           <div className="flex flex-col mx-auto">
             <Challenge />
             <div className="bg-gray-50 ">
-              <div className="pt-36 text-5xl text-gray-300 mx-auto flex justify-center">
+              <div className="sm:pt-36 pt-20 sm:text-5xl text-3xl text-gray-300 mx-auto flex justify-center">
                 The Functionalities
               </div>
               <Authentication />

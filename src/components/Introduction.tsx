@@ -1,8 +1,10 @@
 export default function Introduction() {
   return (
-    <div className="flex flex-row py-72 mx-auto justify-center space-x-32 ">
-      <div className="text-5xl ">Stryker</div>
-      <div className="w-2/5">
+    <div className="flex sm:flex-row flex-col sm:py-72 py-28 mx-auto justify-center sm:space-x-32 px-5 sm:px-0">
+      <div className="sm:text-5xl text-4xl text-center mb-10 sm:mb-0">
+        Stryker
+      </div>
+      <div className="sm:w-2/5">
         Stryker Corporation is a leading medical technology company that strives
         to improve patient care through innovation.
         <br />
