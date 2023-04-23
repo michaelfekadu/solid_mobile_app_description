@@ -15,14 +15,14 @@ export default function ProjectRecap() {
       <br />
       <br />
       <div>
-        During this project, I gained a deep understanding of app development
-        with React Native. I also gained proficiency in working with APIs,
-        learned the fundamentals of authentication, refreshed my skills in
-        JavaScript, and became familiar with testing frameworks such as Detox
-        and Appium. Additionally, I learned how to publish and update apps on
-        the Apple App Store. I am grateful to my team at Stryker for providing
-        me with this valuable learning experience and the opportunity to expand
-        my skill set.
+        During this project, I gained a comprehensive understanding of app
+        development with React Native. I also achieved proficiency in working
+        with REST APIs, gained knowledge of app authentication, deepened my
+        JavaScript expertise, and became familiar with testing frameworks such
+        as Detox and Appium. Furthermore, I learned how to publish and update
+        apps on the Apple App Store. I am grateful to my team at Stryker for
+        providing me with this invaluable learning experience and the
+        opportunity to broaden my skill set.
       </div>
     </div>
   );
